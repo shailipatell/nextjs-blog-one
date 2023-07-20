@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Layout from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import Date from '../components/date'
 
 
 
@@ -38,7 +39,7 @@ export default function Home({ allPostsData }) {
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <Date dateString={date}/>
               </small>
             </li>
           ))}
